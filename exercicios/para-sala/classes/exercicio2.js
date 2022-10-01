@@ -42,3 +42,7 @@ console.log(invoiceItem1);
 console.log(invoiceItem1.getProductPrice());
 console.log(invoiceItem1.getProductById(1));
 console.log(invoiceItem1.getTotal(1, 2));
+
+
+
+// CODE REVIEW DA PRISCILA
