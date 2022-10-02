@@ -1,0 +1,72 @@
+
+}
+
+const employee1 = new Employee(123, "Luisa Mel", 100);
+
+console.log(employee1.raiseSalary(10));
+
+
+class Employee {
+  constructor(id, name, salary) {
+    this.id = id;
+    this.name = name;
+    this.salary = salary;
+  }
+
+  raiseSalary = (percent) =>
+    `O funcionario ${this.name} de id ${
+      this.id
+    }, receberá aumento de ${percent} % totalizando um salario no valor de ${
+      (this.salary * percent) / 100 + this.salary
+    }`;
+}
+
+const employee1 = new Employee(123, "Luisa Mel", 100);
+
+console.log(employee1.raiseSalary(10));
+
+----------------
+
+class Employee {
+    constructor(name, id, salary) {
+        this.name =  name;
+        this.id = id;
+        this.salary = salary;
+    }
+
+    raiseSalary(percent) {
+        const putInpercet = percent / 100
+        const increaseSalary = this.salary * putInpercet
+        const totalValueOfSalary = increaseSalary + this.salary
+        return totalValueOfSalary
+    }
+}
+
+const newEmployee = new Employee('aline', 10, 200)
+
+console.log(newEmployee.raiseSalary(12))
+
+-----
+
+class Employee  {
+  constructor(id,name, salary){
+    this.id = id,
+    this.name = name,
+    this.salary = salary 
+  }
+
+  raiseSalary(salary){
+    this.salary = salary
+    let salaryIncrease = this.salary * 0.12
+    let salaryFinal = this.salary + salaryIncrease
+    return salaryFinal
+  }
+}
+
+
+const user = new Employee(1,"carol")
+//console.log(user)
+console.log(`Olá, ${user.name}, Seu aumento de salário é ${user.raiseSalary(2000)}`)
+
+
+
