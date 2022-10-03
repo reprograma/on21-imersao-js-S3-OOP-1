@@ -6,9 +6,7 @@ class InvoiceItem {
     this.unitPrice = unitPrice;
   }
 
-  getID() {
-    return this.id;
-  }
+  getID = () => this.id;
 
   getDesc = () => this.desc;
 
