@@ -12,7 +12,7 @@ class InvoiceItem {
         this.price = price;
     }
 
-    getProdId(){
+     getProdDescriptiond(){
         return `Estoque   ${this.description}`;
        }
    
@@ -26,5 +26,5 @@ class InvoiceItem {
     const geladeira = new InvoiceItem (10, "geladeira na cor cinza de 450 litros", 50, 2500);
     const celular = new InvoiceItem (5,  "Iphone cor rose 128 GB", 20, 5000);
 
-     console.log(geladeira.getProdId(), geladeira.getProdPrice());
-     console.log(celular.getProdId(), celular.getProdPrice());
+     console.log(geladeira. getProdDescription(), geladeira.getProdPrice());
+     console.log(celular. getProdDescription(), celular.getProdPrice());
