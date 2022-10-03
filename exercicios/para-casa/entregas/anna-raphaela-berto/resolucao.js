@@ -26,19 +26,19 @@ class InvoiceItem {
     const newValue = this.price - value
     return `Você diminuiu R$${value} do valor do produto, e seu novo valor é de R$${newValue}`
   }
-  stockValue(){
-    const stockValueTotal = this.price * this.quanty
-    return `Seu valor total de estoque é de R$${stockValueTotal} em produtos`
+  totalPrice(){
+    const totalPrice = this.price * this.quanty
+    return `Seu valor total por unidade é de R$${totalPrice}`
   }
 }
 
-const item = new InvoiceItem("1", "produto1 - bla, bla", "2", "20")
+const item = new InvoiceItem("1", "mesa alta de cor branca", "10", "200")
 console.log(item)
 console.log(item.getId())
 console.log(item.getDescription())
 console.log(item.getPrice())
 console.log(item.getQuanty())
-console.log(item.stockValue())
+console.log(item.totalPrice())
 console.log(item.increaseValue(30))
 console.log(item.decreaseValue(10))
 
