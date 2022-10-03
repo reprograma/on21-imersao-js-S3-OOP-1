@@ -17,8 +17,8 @@ class InvoiceItem {
        }
    
     getTotalPrice(){
-        const prodPrice = this.quantity * this.price
-        return `Valor total ${TotalPrice}`;
+        const totalPrice = this.quantity * this.price
+        return `Valor total ${totalPrice}`;
       }
    
     }
