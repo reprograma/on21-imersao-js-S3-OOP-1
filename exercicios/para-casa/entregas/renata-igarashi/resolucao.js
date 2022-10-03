@@ -39,11 +39,6 @@ class InvoiceItem {
 const invoiceItem1 = new InvoiceItem('1', 'javascript book', 5, 13)
 console.log(invoiceItem1);
 
-// invoiceItem1.setQty(10)
-// console.log(invoiceItem1.getTotal());
-
-// invoiceItem1.setUnityPrice(10)
-// console.log(invoiceItem1);
 console.log(`Total: ${invoiceItem1.getTotal()}`);
 
 console.log(`
@@ -57,4 +52,3 @@ Total with new price: ${invoiceItem1.getTotal()}
 ------------------
 Item Info: ${invoiceItem1.toString()} 
 `);
-// console.log(invoiceItem1.toString())
