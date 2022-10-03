@@ -13,7 +13,7 @@ class InvoiceItem {
     }
 
      getProdDescriptiond(){
-        return `Estoque   ${this.description}`;
+        return `Estoque  ${this.description}`;
        }
    
     getTotalPrice(){
