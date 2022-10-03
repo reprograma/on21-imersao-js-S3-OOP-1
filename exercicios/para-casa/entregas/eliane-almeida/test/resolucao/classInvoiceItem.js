@@ -42,7 +42,7 @@ class InvoiceItem {
         return `InvoiceItem[id = ${this.id}, descrição = ${this.desc}, quantidade = ${this.qty}, Valor unitário = ${this.unitPrice} ]`
     }
 
-    toString(InvoiceItem) {
+    toString2(InvoiceItem) {
 
         return InvoiceItem
     }

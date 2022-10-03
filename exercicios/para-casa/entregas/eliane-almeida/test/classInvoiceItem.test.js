@@ -86,11 +86,11 @@ describe("Testar a classe InvoiceItem", () => {
 
     })
 
-    describe("retornar as informações do produto na fatura", () => {
-        it ("Testar o retorno da fatura", () => {
+    describe("retornar as informações do produto", () => {
+        it ("Testar o retorno do produto na fatura ", () => {
             const myInvoiceItem =  new InvoiceItem(546, "Arroz", 10, 2)
-            const result = myInvoiceItem.toString(myInvoiceItem)
-            expect(result).toEqual(myInvoiceItem);
+            const result = myInvoiceItem.toString2(myInvoiceItem)
+            expect(result).toEqual("InvoiceItem[id = 546, descrição = Arroz, quantidade = 10, Valor unitário = 2 ]");
         });
 
     })
