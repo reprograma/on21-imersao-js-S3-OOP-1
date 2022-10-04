@@ -11,43 +11,15 @@ class InvoiceItem {
   }
 
   getDesc() {
-    return `Item desc is ${this.desc}`;
-  }
-
-  getQty() {
-    return `Item qty is ${this.qty}`;
-  }
-
-  setQty(newQty) {
-    this.qty = newQty;
-    return `New qty ${this.qty}`;
-  }
-
-  getUnitPrice() {
-    return `Item unit price is ${this.unitPrice}`;
-  }
-
-  setUnitPrice(newUnitPrice) {
-    this.unitPrice = newUnitPrice;
-    return `New unit price ${this.unitPrice}`;
+    return `Item desc is "${this.desc}"`;
   }
 
   getTotal() {
-    return `Total is ${this.unitPrice * this.qty}`;
-  }
-
-  toString() {
-    return `InvoiceItem: Id: ${this.id}, Desc: ${this.desc}, Qty: ${this.qty}, UnitPrice: ${this.unitPrice}`;
+    return `Total is $${this.unitPrice * this.qty}`;
   }
 }
 
 const invoiceItem1 = new InvoiceItem(1, "invoice item description", 7, 25);
 console.log(invoiceItem1.getID());
 console.log(invoiceItem1.getDesc());
-console.log(invoiceItem1.getQty());
-console.log(invoiceItem1.getUnitPrice());
 console.log(invoiceItem1.getTotal());
-console.log(invoiceItem1.setQty(3));
-console.log(invoiceItem1.setUnitPrice(15.0));
-console.log(invoiceItem1.getTotal());
-console.log(invoiceItem1.toString());
