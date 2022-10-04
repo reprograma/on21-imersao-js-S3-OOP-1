@@ -3,7 +3,7 @@
 ## Nome do Exercicio
 
 - Explicação do exercício: 
-Excreva uma classe chamada Employee, que modela um funcionário com os atributos id, name e salary. O método raiseSalary(percent) aumenta o salário baseado numa dada porcentagem.
+Escreva uma classe chamada Employee, que modela um funcionário com os atributos id, name e salary. O método raiseSalary(percent) aumenta o salário baseado numa dada porcentagem.
  Em seguida, escreva todos os metódos que contém na imagem abaixo.
 
  <h1 align="center">
