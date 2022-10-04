@@ -7,7 +7,7 @@ Excreva uma classe chamada Employee, que modela um funcionário com os atributos
  Em seguida, escreva todos os metódos que contém na imagem abaixo.
 
  <h1 align="center">
-  <img src="assets/exercicio-casa-diagrama.png" alt="representação do paradigma de programação estruturado" width="500">
+  <img src="../../assets/exercicio-casa-diagrama.png" alt="representação do paradigma de programação estruturado" width="500">
 </h1>
 
 ---
