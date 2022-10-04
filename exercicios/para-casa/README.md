@@ -3,7 +3,13 @@
 ## Nome do Exercicio
 
 - Explicação do exercício: 
-[CONTEUDO] 
+Excreva uma classe chamada Employee, que modela um funcionário com os atributos id, name e salary. O método raiseSalary(percent) aumenta o salário baseado numa dada porcentagem.
+ Em seguida, escreva todos os metódos que contém na imagem abaixo.
+
+ <h1 align="center">
+  <img src="assets/exercicio-casa-diagrama.png" alt="representação do paradigma de programação estruturado" width="500">
+</h1>
+
 ---
 
 Terminou o exercício? Dá uma olhada nessa checklist e confere se tá tudo certinho, combinado?!
