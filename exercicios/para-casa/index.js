@@ -15,14 +15,15 @@ class InvoiceItem {
         return this.id;
     }
 
-    getDesc() {
+    updateDescription() {
         return this.description;
     }
-    getQty() {
+
+    getQtuantity() {
         return this.quantity;
     }
 
-    setQty(qty) {
+    setQuantity(quantity) {
         this.quantity = quantity;
     }
 
@@ -30,6 +31,29 @@ class InvoiceItem {
         return this.unitPrice;
     }
 
+    getTotal() {
+        return this.unitPrice != null && this.quantity != null ? this.unitPrice * this.quantity : 0;
+    }
+
+    getMensagemTotal() {
+        return `Total do ${this.description}: R$${this.getTotal()};`
+    }
+
+    toString() {
+        return `InvoiceItem[ id = ${this.id}, description = ${this.description}, quantity = ${this.quantitty}, unitPrice = ${this.unitPrice} ]`;
+    }
 }
+
+const Computador = new InvoiceItem(1, "Computador", 50, 100);
+console.log(newProduct.updateDescription("Computador LG All in One Quad Core 4GB"));
+
+const newProduct = new InvoiceItem(2, "Notebook", 50, 100);
+console.log(newProduct.updateDescription("Notebook Samsung Book Intel Celeron 4GB 500GB"));
+
+console.log(monitor.toString());
+console.log(`${monitor.getMensagemTotal()} \n`);
+monitor.setQuantity(80);
+
+
 
     
