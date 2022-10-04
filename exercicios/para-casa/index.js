@@ -4,11 +4,11 @@ conforme o diagrama de classe.
  */
 
 class InvoiceItem {
-    constructor(id, desc, qty, unitPrice) {
+    constructor(id, description, quantity, price) {
         this.id = id;
-        this.desc = desc;
-        this.qty = qty;
-        this.unitPrice = unitPrice;
+        this.description = description;
+        this.quantity = quantity;
+        this.price = price;
     }
 
     getId() {
@@ -16,8 +16,20 @@ class InvoiceItem {
     }
 
     getDesc() {
-        return this.desc;
+        return this.description;
     }
+    getQty() {
+        return this.quantity;
+    }
+
+    setQty(qty) {
+        this.quantity = quantity;
+    }
+
+    getUnitPrice() {
+        return this.unitPrice;
+    }
+
 }
 
     
