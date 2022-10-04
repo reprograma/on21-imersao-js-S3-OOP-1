@@ -3,8 +3,8 @@
 ## Nome do Exercicio
 
 - Explicação do exercício: 
-Escreva uma classe chamada Employee, que modela um funcionário com os atributos id, name e salary. O método raiseSalary(percent) aumenta o salário baseado numa dada porcentagem.
- Em seguida, escreva todos os metódos que contém na imagem abaixo.
+Escreva uma classe chamada InvoiceItem, que modela um item de uma compra, com id, description, quantity e price.
+Em seguida, escreva todos os metódos que contém na imagem abaixo.
 
  <h1 align="center">
   <img src="../../assets/exercicio-casa-diagrama.png" alt="representação do paradigma de programação estruturado" width="500">
