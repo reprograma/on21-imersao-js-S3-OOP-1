@@ -1,11 +1,3 @@
-/*Escreva uma classe chamada Cliente com os seguintes atributos: 
-- nome; - cpf; - email; - senha; A classe Cliente deverá ter um método
- para retornar apenas o nome do cliente; Em seguida, crie em outro arquivo chamado Conta,
-  que modela uma conta bancária de um Cliente com os seguintes atributos: - saldo; - cliente; -
-   agência; Crie os seguintes metódos com os seus requisitos: - sacar() -> quando o cliente 
-   saca o dinheiro, ele terá que pagar uma taxa de 1, 5 sobre o valor sacado; - depositar
-    () -> o cliente poder */
-
 class Cliente {
   constructor(nome, cpf, email, senha) {
     this.nome = nome;
@@ -24,9 +16,29 @@ class Conta extends Cliente {
     this.cliente = Cliente;
     this.agencia = agencia;
   }
-  sacar = (valorDeposito) => {
-    if (true) {
-      this.saldo - valorDeposito;
+
+  getValue = (value) => {
+    let saldo = this.saldo;
+    const TAX_ = 1.5;
+    const CALCULUS_RATE = saldo - (saldo * TAX_) / 100;
+    if (saldo >= value) {
+      saldo -= value;
+
+      console.log(
+        `Você sacou: ${Number(CALCULUS_RATE - saldo).toFixed(
+          2
+        )}, restando: ${saldo}`
+      );
+      return (this.saldo = saldo);
     }
+    return console.log(`Seu saldo é: ${saldo}, deposite para poder sacar.`);
   };
+
+  setDeposit = (value) => (this.saldo += value);
 }
+
+const conta1 = new Conta("anne", 122333356, "anne@gmail", "****", 10, 1025);
+
+console.log(conta1.setDeposit(15));
+conta1.getValue(25);
+console.log(conta1.saldo);

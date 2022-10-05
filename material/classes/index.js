@@ -1,19 +1,4 @@
-<<<<<<< HEAD
-class User {
-  constructor(name, email, password) {
-    this.name = name;
-    this.email = email;
-    this.password = password;
-  }
-
-  getName = () => `Seja bem vinda, ${this.name}`;
-}
-
-const user1 = new User("nanana", "nanana@com", "sasas");
-
-console.log(user1.getName());
-=======
-//como criar uma "classificação" da nossa entidade para modelar os nossos atributos. 
+//como criar uma "classificação" da nossa entidade para modelar os nossos atributos.
 
 /* class User {
 
@@ -21,39 +6,35 @@ console.log(user1.getName());
 
 //Como atribuimos valores a nossa classe?
 
-class User{
-    constructor(name, email, password){
-        this.name = name;
-        this.email = email;
-        this.password = password; 
-    }
+class User {
+  constructor(name, email, password) {
+    this.name = name;
+    this.email = email;
+    this.password = password;
+  }
 
-    getName(){
-        return `Seja bem vinde, ${this.name}`
-    }
+  getName() {
+    return `Seja bem vinde, ${this.name}`;
+  }
 
-    getNameLength(){
-        return `${this.name} o tamanho do seu primeiro nome é ${this.name.length}`
-    }
-
+  getNameLength() {
+    return `${this.name} o tamanho do seu primeiro nome é ${this.name.length}`;
+  }
 }
 
 const objLiteralUser1 = {
-    name: "Jessica"
-}
+  name: "Jessica",
+};
 
 const objLiteralUser2 = {
-    name: "Bárbara"
-}
+  name: "Bárbara",
+};
 
 const objLiteralUser3 = {
-    name: "Mabiá"
-}
+  name: "Mabiá",
+};
 const user1 = new User("Jéssica", "oskojess@gmail.com", "senha12#");
 const user2 = new User("Jéssica", "oskojess@gmail.com", "senha12#");
 const user3 = new User("Jéssica", "oskojess@gmail.com", "senha12#");
 
-console.log(user1.getNameLength())
-
-
->>>>>>> main
+console.log(user1.getNameLength());
