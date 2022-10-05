@@ -32,11 +32,11 @@ class InvoiceItem {
     }
 
     getTotal() {
-        return this.unitPrice != null && this.quantity != null ? this.unitPrice * this.quantity : 0;
+        return this.unitPrice != null && this.quantity != null ? this.unitPrice * this.quantity:0;
     }
 
     getMensagemTotal() {
-        return `Total do ${this.description}: R$${this.getTotal()};`
+        return `Valor total do produto ${this.description}: R$${this.getTotal()};`
     }
 
     toString() {
@@ -47,7 +47,7 @@ class InvoiceItem {
 const Computador = new InvoiceItem(1, "Computador", 50, 100);
 console.log(newProduct.updateDescription("Computador LG All in One Quad Core 4GB"));
 
-const newProduct = new InvoiceItem(2, "Notebook", 50, 100);
+const Notebook = new InvoiceItem(2, "Notebook", 50, 100);
 console.log(newProduct.updateDescription("Notebook Samsung Book Intel Celeron 4GB 500GB"));
 
 console.log(monitor.toString());
