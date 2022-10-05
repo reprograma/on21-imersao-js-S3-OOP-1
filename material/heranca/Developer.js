@@ -10,4 +10,3 @@ export class Developer extends Person {
         this.skills = skills;
     }
 }
-

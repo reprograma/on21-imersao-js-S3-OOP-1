@@ -1,43 +1,54 @@
-//como criar uma "classificação" da nossa entidade para modelar os nossos atributos. 
 
-/* class User {
+//  POO cria entidades
 
-} */
+// Class - classifica a entidade a ser inserida e depois será um objeto
 
-//Como atribuimos valores a nossa classe?
+// como criar uma classificação da nossa entidade para modelar os nosso atributos
 
-class User{
-    constructor(name, email, password){
-        this.name = name;
+
+//  atributos são características atriuidas as classes
+//  como atribuimos valorres a noss classe?
+//  constructor recebe os atributos
+//  this contextualiza um  - faz uma referencia ao atributos do constructor 
+// é como se fosse uma variável dentro da classe, não é o mesmo do parâmetro
+//  a classe é um molde
+class User {
+    constructor(nome, email, password){
+        this.name = nome;
         this.email = email;
-        this.password = password; 
+        this.password = password;
     }
+    //  método é a ação que eu vou fazer com os dados que eu tenho
 
     getName(){
-        return `Seja bem vinde, ${this.name}`
+        return `Seja bem vinda, ${this.name}`
     }
 
-    getNameLength(){
-        return `${this.name} o tamanho do seu primeiro nome é ${this.name.length}`
+    getTamanhoNome(){
+        
+        return `O tamanho do seu primeiro nome é , ${this.name.length}`
     }
 
+    // getTamanhoNome(){
+    //     const tamanho = this.name
+    //     return `O tamanho do nome é ${tamanho.length}`
+    // }
 }
 
-const objLiteralUser1 = {
-    name: "Jessica"
-}
 
-const objLiteralUser2 = {
-    name: "Bárbara"
-}
-
-const objLiteralUser3 = {
-    name: "Mabiá"
-}
-const user1 = new User("Jéssica", "oskojess@gmail.com", "senha12#");
-const user2 = new User("Jéssica", "oskojess@gmail.com", "senha12#");
-const user3 = new User("Jéssica", "oskojess@gmail.com", "senha12#");
-
-console.log(user1.getNameLength())
+// instanciar/ chmar  a classe para criar o objeto
 
 
+const user1 = new User("Jaqueline","barrildobrado@gmail.com", "senha13");
+const user2 = new User("Jaqueline","barrildobrado@gmail.com", "senha13");
+const user3 = new User("Jaqueline","barrildobrado@gmail.com", "senha13");
+
+console.log(user1,user2,user3)
+
+console.log(user1.getName())
+
+console.log(user1.getTamanhoNome())
+
+// Get retorna o atributo
+
+//  usa o this como paranetri

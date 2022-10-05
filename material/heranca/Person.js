@@ -7,6 +7,9 @@ export class Person {
     }
 
     getName(){
-       return `O seu nome é ${this.name}`
+
+        `O seu nome é ${this.name}`
     }
 }
+
+module.exports = Person;
