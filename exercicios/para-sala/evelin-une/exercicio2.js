@@ -9,4 +9,17 @@ class InvoiceItem {
         this.price = price;
 
     }
+
+    getId(){
+        return this.id;
+    }
+
+    updateDescription(){
+        this.description = this.description
+        return `a nova descrição do produto é ${this.description}`
+    }
+
 }
+
+const newProduct = new InvoiceItem(1, 'all star n35', 10, 100.00);
+console.log(newProduct.updateDescription('nova descrição'));
