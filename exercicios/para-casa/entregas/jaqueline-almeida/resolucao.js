@@ -14,6 +14,9 @@ class InvoiceItem {
     
     }
 
+    getId(){
+        return this.id;
+    }
     getProductDescription() { 
         return `Produto: ${this.description}`;
     }
