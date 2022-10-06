@@ -5,8 +5,6 @@ criar dois metodos
 criar metodo preço unitario vezes quantidade
 */
 
-const { getDiffieHellman } = require("crypto");
-
 class InvoiceItem{
     constructor(id, description, quantity, price){
         this.id = id;
