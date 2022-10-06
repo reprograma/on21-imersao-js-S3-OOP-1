@@ -16,9 +16,28 @@ class InvoiceItem{
     getId(){
         return this.id;
     }
+
+    getDescription(){
+        return this.description;
+    }
+
+    getQuantity(){
+        return this.quantity;
+    }
+
+    getPrice(){
+        return this.price;
+    }
+
+
 }
 
 
 const newProduct = new InvoiceItem(123, "Produto cc", 20, 40)
 
 console.log(newProduct)
+console.log(newProduct.getDescription())
+console.log(newProduct.getId())
+console.log(newProduct.getPrice())
+console.log(newProduct.getQuantity())
+
