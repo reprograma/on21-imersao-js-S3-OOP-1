@@ -25,7 +25,7 @@ class Conta extends Cliente {
       saldo -= value;
 
       console.log(
-        `Você sacou: ${Number(CALCULUS_RATE - saldo).toFixed(
+        `Você sacou: ${Number(CALCULUS_RATE - value).toFixed(
           2
         )}, restando: ${saldo}`
       );
