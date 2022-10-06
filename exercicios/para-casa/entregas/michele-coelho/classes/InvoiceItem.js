@@ -37,5 +37,5 @@ class InvoiceItem {
 const compra1 = new InvoiceItem(1, "Chocolate", 7, 15);
 
 console.log(compra1);
-console.log(`${compra1.mensagem()}`)
+console.log(`${compra1.mostrarMensagem()}`)
 console.log(`Valor total da compra: ${compra1.getTotal()}`)
