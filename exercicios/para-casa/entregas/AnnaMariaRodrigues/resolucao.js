@@ -39,6 +39,12 @@ class InvoiceItem{
     return `O preço unitario é ${this.price}`
    }
 
+   setUnitPrice(preco)
+   {
+    this.price = preco;
+    return `O novo preço unitario é ${this.price}`
+   }
+
    getTotal()
    {
     const preco_total = (this.price*this.quantity)
@@ -60,3 +66,4 @@ console.log(invItem.getUnitPrice());
 console.log(invItem.setQty(43));
 console.log(invItem.getTotal());
 console.log(invItem.toString());
+console.log(invItem.setUnitPrice(3))
