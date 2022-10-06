@@ -14,11 +14,6 @@ class InvoiceItem {
     return this.id;
   }
 
-  // updateDescription(description){
-  //   this.description = description;
-  //   return `a nova descrição do produto é: ${description}`;
-  // }
-
   getDescription() {
     return this.description;
   }
