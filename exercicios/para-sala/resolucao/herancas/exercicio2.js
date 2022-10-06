@@ -15,21 +15,16 @@ Para finalizar, crie uma classe Teacher que também terá as informações de Pe
 - Turmas; */
 
 class Person{
-    constructor(nome, endereco, nascimento){
-        this.nome=nome
-        this.endereco=endereco
-        this.nascimento=nascimento
+    constructor(name, address, brith_date){
+        this.name = name;
+        this.address = address;
+        this.brith_date = brith_date;
     }
 }
 
 class Student extends Person{
-    constructor(nome, endereco, nascimento, grade, turmas){
-        super(nome, endereco, nascimento)
-        this.grade=grade
-        this.turmas=turmas
+    constructor(team, subjects){
+        this.team = team;
+        this.subjects = subjects;
     }
 }
-
-const aluno1 = new Student ("Caio", "rua di crichê", "28/08/1997", "Grade TI 1", "Turma 1"); 
-
-console.log(aluno1)
