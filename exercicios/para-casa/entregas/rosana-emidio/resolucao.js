@@ -13,7 +13,7 @@ class InvoiceItem{
         this.price = price;
     }
 
-    getId(){
+    getID(){
         return this.id;
     }
 
@@ -25,19 +25,40 @@ class InvoiceItem{
         return this.quantity;
     }
 
+    setQuantity(newQuantity){
+        return this.quantity = newQuantity 
+    }
+
     getPrice(){
         return this.price;
+    }
+
+    setPrice(newPrice){
+        return this.price = newPrice
+    } 
+
+    getTotal(){   
+        let valorTotal = this.price * this.quantity
+
+        return valorTotal
+    }
+
+    detailsProduct(){
+        let details = `
+        Id do produto: ${this.getID()} \n 
+        Descrição: ${this.getDescription()} \n 
+        Quantidade: ${this.getQuantity()} \n 
+        Preço: ${this.getPrice()}\n
+        Valor Total: R$ ${this.getTotal()}
+        `
+        return details
     }
 
 
 }
 
+const newProduct = new InvoiceItem(42, "Action figure Homem Aranha", 35 , 89.52)
 
-const newProduct = new InvoiceItem(123, "Produto cc", 20, 40)
 
-console.log(newProduct)
-console.log(newProduct.getDescription())
-console.log(newProduct.getId())
-console.log(newProduct.getPrice())
-console.log(newProduct.getQuantity())
+
 
