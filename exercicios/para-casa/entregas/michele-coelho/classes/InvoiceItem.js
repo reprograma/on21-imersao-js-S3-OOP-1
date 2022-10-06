@@ -28,7 +28,7 @@ class InvoiceItem {
       let valor = this.price * this.quantity;
       return valor;
    }
-   mensagem() {
+   mostrarMensagem() {
       let mensagem = `\n InvoiceItem  [ id=${this.id}, Desc=${this.description}, Qty=${this.quantity}, UnitPrice=${this.price}]`
       return mensagem;
    }
