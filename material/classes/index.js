@@ -28,5 +28,24 @@ const user1 = new User("Caroline", "caroline@gmail.com", "123456");
 const user2 = new User("Gustavo", "gustavo@gmail.com", "1234567");
 const user3 = new User("Prana", "praninha@gmail.com", "1234567");
 
-console.log(user3.getNameLength())
+//Herança: Classes "filhas" que herdam atributos da classe "mãe" 
 
+class Person {
+    constructor(name, email, cel){
+        this.name = name;
+        this.email = email;
+        this.cel = cel;
+    }
+}
+
+class Developer extends Person {
+    constructor(name, email, cel, skills){
+        super(name, email, cel);
+
+        this.skills = skills;
+    }
+}
+
+const createPerfilDani = new Developer("Danielle", "dani@email.com", "(11)9999-2212", ["html", "css", "Javascript"])
+
+console.log(createPerfilDani)
