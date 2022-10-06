@@ -17,17 +17,15 @@ class Conta extends Cliente {
     this.agencia = agencia;
   }
 
-  getValue = (value) => {
+ getValue = (value) => {
     let saldo = this.saldo;
     const TAX_ = 1.5;
-    const CALCULUS_RATE = saldo - (saldo * TAX_) / 100;
+    const CALCULUS_RATE = value - (value * TAX_) / 100;
     if (saldo >= value) {
       saldo -= value;
 
       console.log(
-        `Você sacou: ${Number(CALCULUS_RATE - value).toFixed(
-          2
-        )}, restando: ${saldo}`
+        `Você sacou: ${Number(CALCULUS_RATE).toFixed(2)}, restando: ${saldo}`
       );
       return (this.saldo = saldo);
     }
