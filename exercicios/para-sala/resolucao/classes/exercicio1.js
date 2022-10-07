@@ -20,7 +20,7 @@ class Employee {
     raiseSalary = (percent) =>
       `O funcionario ${this.name} de id ${
         this.id
-      }, receberá aumento de ${percent} % totalizando um salario no valor de ${
+      }, o aumento recebido será de ${percent} % totalizando salario no valor de ${
         (this.salary * percent) / 100 + this.salary
       }`;
   }
