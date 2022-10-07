@@ -16,11 +16,11 @@ class InvoiceItem{
     
      updateDescription(descripton){
         this.description = descripton;
-    return `a nova descrição do produto é: ${descripton}`
+    return `nova descrição do produto é: ${descripton}`
     }
 }
 
 
-const newProduct = new InvoiceItem(123, "Produto x", 20, 40);
+const newProduct = new InvoiceItem(123, "Produto y", 20, 40);
 console.log(newProduct.updateDescription("Descrição nova"))
 
