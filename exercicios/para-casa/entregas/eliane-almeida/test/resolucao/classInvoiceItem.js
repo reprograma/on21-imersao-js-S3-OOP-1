@@ -39,7 +39,9 @@ class InvoiceItem {
 
     toString() {
 
-        return `InvoiceItem[id = ${this.id}, descrição = ${this.desc}, quantidade = ${this.qty}, Valor unitário = ${this.unitPrice} ]`
+        const details = getDesc()
+        return details
+        //`InvoiceItem[id = ${this.id}, descrição = ${this.desc}, quantidade = ${this.qty}, Valor unitário = ${this.unitPrice} ]`
     }
 
     toString2(InvoiceItem) {
