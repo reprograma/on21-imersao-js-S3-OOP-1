@@ -1,0 +1,49 @@
+Paradigma de Programação - CONCEITOS
+
+Imperativo = atribuição de dados que muda de estado - destrutiva (sao as variáveis)
+    Vantagens - simples de criar
+    Desvantagens - nao da para parametrar / menos eficiente / nao resolve problemas complexos / pogramacao paralela nao possivel
+    Esse é o conceito das variáveis
+
+    Cobol - C - Basic - são linguagens de baixa plataforma neh, por isso estão estruturais 
+
+
+Orientado a Objeto 
+
+    linguagens C++ / Java / C# / Ruby
+
+
+Declarativa
+    Unem valores, nao e destrutiva, por exemplo SQL com Join
+    Data lake, grafana etc 
+
+
+Funcional
+    Comparativo, arvores de expressoes mapeiam valores
+        Alto nivel de abstração
+
+
+PROCURAR CERTIFIADOS EM CLOUD E BANCO DE DADOS, COMO EXTRA
+
+
+
+
+// EXEMPLO DA DANIELA, Jessica pediu para guardar os calculos numa varial para otimoizar
+// class Employee {
+//     constructor(id, name, salary) {
+//     this.id = id;
+//     this.name = name;
+//     this.salary = salary;
+//     }
+    
+//     raiseSalary = (percent) =>  // não precisa de return porque a arrow function tem como implícito o return caso só tenha 1 linha de instrução 
+//     `O funcionario ${this.name} de id ${
+//     this.id
+//     }, receberá aumento de ${percent} % totalizando um salario no valor de ${
+//     (this.salary * percent) / 100 + this.salary
+//     }`;
+//     }
+    
+//     const employee1 = new Employee(123, "Luisa Mel", 100);
+    
+//     console.log(employee1.raiseSalary(10)); 
