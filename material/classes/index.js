@@ -7,9 +7,9 @@
 //Como atribuimos valores a nossa classe?
 
 class User{
-    constructor(name, email, password){
+    constructor(name, email, password){ // (name, email, password) -----> Quando esta aqui são "atributos"
         this.name = name;
-        this.email = email;
+        this.email = email;          // this.email = email ----> quando esta aqui estou passando um "parâmetro", estou passando um parâmetro e vou atribuir a um atributo
         this.password = password; 
     }
 
@@ -41,3 +41,5 @@ const user3 = new User("Jéssica", "oskojess@gmail.com", "senha12#");
 console.log(user1.getNameLength())
 
 
+    //qual a diferença entre atributos e parametros???????
+    // estudar um pouco mais o "this", para entender melhor 
