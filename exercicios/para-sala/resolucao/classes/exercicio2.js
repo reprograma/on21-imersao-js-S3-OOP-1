@@ -28,8 +28,8 @@ class InvoiceItem{
     /// o set é o que nesse caso? 
     /// posso fazer assim no return return `Qtd do produto: ${this.qty = qty} `
     setQty(qty){
-        this.qty = qty;
-        return `Qtd do produto: ${this.qty}`;
+        this.quantity = qty;
+        return `Qtd do produto: ${this.quantity}`;
     }
 
     getUnitPrice(){
@@ -47,7 +47,7 @@ class InvoiceItem{
     }
 
     // ????????? é isso? 
-    // ????????? é isso? não entendi 
+    // ????????? é isso? não entendi, ta certo?? 
     toString(){
         return `InvoiceItem[id=${this.id},desc=${this.desc},qty=${
           this.qty
@@ -67,10 +67,10 @@ console.log(newProduct.updateDescription("Descrição nova"))
 
 //Resolução do exercício
 const melao = new InvoiceItem(1, "Melão de Mossoró", 10, 4.50);
-const jaca = new InvoiceItem(2, "Jaca dura", 50, 5.00);
-const caju = new InvoiceItem(3, "Caju vermelho", 80, 1.00); 
+const jaca = new InvoiceItem(2, "Jaca dura", 50, 5);
+const caju = new InvoiceItem(3, "Caju vermelho", 80, 1); 
 
-console.log(melao.getDesc(),'-', melao.getUnitPrice());
-console.log(jaca.getDesc(),'-', jaca.getUnitPrice());
-console.log(caju.getDesc(),'-', caju.getUnitPrice());
+console.log(melao.getDesc(),'-', melao.getQty(),'-', melao.getUnitPrice());
+console.log(jaca.getDesc(),'-', jaca.getQty(),'-', jaca.getUnitPrice());
+console.log(caju.getDesc(),'-', caju.getQty(),'-', caju.getUnitPrice());
 
