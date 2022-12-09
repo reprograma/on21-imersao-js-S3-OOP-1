@@ -7,7 +7,7 @@ Escreva a classe Employee.
 - Criar o metódo raiseSalary()
 
  aumento=salario * 12
-        salario=(salario+aumento)
+ salario=(salario+aumento)
 */
 
 class Employee {
@@ -18,11 +18,9 @@ class Employee {
     }
   
     raiseSalary = (percent) =>
-      `O funcionario ${this.name} de id ${
-        this.id
-      }, receberá aumento de ${percent} % totalizando um salario no valor de ${
-        (this.salary * percent) / 100 + this.salary
-      }`;
+      `O funcionário ${this.name} de id ${this.id}, receberá aumento de ${
+        percent}% totalizando um salario no valor de ${
+        (this.salary * percent) / 100 + this.salary}`;
   }
   
   const employee1 = new Employee(123, "Luisa Mel", 100);
